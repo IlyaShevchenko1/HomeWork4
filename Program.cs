@@ -3,6 +3,7 @@
 //Task 25. Напишите цикл, который принимает на вход два числа (A и B)
 //и возводит число A в натуральную степень B.
 
+/*
 int NumInPow(int firstNumber, int secondNumber)
 {
     int result = firstNumber;
@@ -23,9 +24,31 @@ int power = Convert.ToInt32(Console.ReadLine());
 int result = NumInPow(number, power);
 Console.WriteLine($"Result of number {number} in power {power} is {result}");
 
+*/
 
 //Task 27. Напишите программу, которая принимает на вход число и выдает
 //сумму цифр в числе
+
+int SumInNum (int number)
+{
+    int res = 0;
+    int remains = 0;
+    while (number > 0)
+    {
+        remains = number % 10;
+        number = number / 10;
+        res = res + remains;
+    }
+    return res;
+}
+
+Console.Write("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int result = SumInNum(number);
+Console.WriteLine($"Sum of digit in the number {number} is {result}");
+
+
 
 //Task 29. Напишите программу, которая задает массив из m элементов и 
 //выводит их на экран.
