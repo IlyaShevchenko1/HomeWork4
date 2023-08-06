@@ -29,6 +29,8 @@ Console.WriteLine($"Result of number {number} in power {power} is {result}");
 //Task 27. Напишите программу, которая принимает на вход число и выдает
 //сумму цифр в числе
 
+/*
+
 int SumInNum (int number)
 {
     int res = 0;
@@ -48,7 +50,40 @@ int number = Convert.ToInt32(Console.ReadLine());
 int result = SumInNum(number);
 Console.WriteLine($"Sum of digit in the number {number} is {result}");
 
-
+*/
 
 //Task 29. Напишите программу, которая задает массив из m элементов и 
 //выводит их на экран.
+
+/*
+
+int[] CreateAnArray(int size)
+{
+    int[] array = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write($"Input a {i + 1} number of massive: ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+
+    return array;
+}
+
+void WriteArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+
+    Console.WriteLine();
+}
+
+Console.Write("Input a lenghts of array: ");
+int lenght = Convert.ToInt32(Console.ReadLine());
+
+int[] myarray = CreateAnArray(lenght);
+WriteArray(myarray);
+
+*/
