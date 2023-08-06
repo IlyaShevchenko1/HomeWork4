@@ -6,6 +6,8 @@
 int NumInPow(int firstNumber, int secondNumber)
 {
     int result = firstNumber;
+    if (secondNumber == 0 && firstNumber > 0) result = 1;
+    if (secondNumber == 0 && firstNumber < 0) result = -1;
     for (int i = 2; i <= secondNumber; i++)
     {
         result = result * firstNumber;
